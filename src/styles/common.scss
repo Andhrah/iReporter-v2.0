@@ -1,0 +1,86 @@
+body {
+	font-family: $font_0, $font_1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $white;
+	margin: 0;
+	outline: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.incident-container-all {
+	position: relative;
+	width: 24%;
+	background-color: $gallery;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+//@extend-elements
+//original selectors
+//.read-more, .btn-container button
+%extend_1 {
+	padding: 10px 12px;
+	border-radius: 20px;
+	color: $blue_dianne;
+	cursor: pointer;
+	box-shadow: inset 2px 1px 2px 2px $black_7, inset -2px -2px 3px $white_76_7, inset 2px 2px 0 0 $white_76_7;
+	transition: all 0.2s linear;
+}
+
+.read-more {
+	text-decoration: none;
+	align-self: center;
+	border: 3px solid $blue_dianne;
+	@extend %extend_1;
+	&:hover {
+		background: $big_stone;
+		color: $gallery;
+	}
+}
+
+.incident-container-all img {
+	width: 100%;
+	height: 230px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.btn-container button {
+	@extend %extend_1;
+}
+
+.btn .edit:hover {
+	background: $big_stone;
+	color: $gallery;
+}
+
+.comment {
+	height: 30%;
+	margin-bottom: 10px;
+	h4 {
+		text-align: center;
+		color: $blue_dianne;
+		font-size: 20px;
+		border-bottom: 3px solid $blue_dianne;
+		border-radius: 15px;
+		padding: 5px 0;
+		margin: 5px;
+	}
+	p {
+		color: $blue_dianne;
+		text-align: left;
+		padding: 0 15px;
+	}
+}

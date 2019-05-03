@@ -1,0 +1,40 @@
+header {
+	background-color: $blue_dianne;
+	min-height: 40px;
+	width: 100%;
+}
+.branding {
+	margin-top: 5px;
+	float: left;
+	width: 20%;
+	img {
+		max-width: 100px;
+		height: 60px;
+	}
+}
+nav {
+	margin-top: 10px;
+	font-size: 12px;
+	display: flex;
+	flex-flow: row wrap;
+	overflow: hidden;
+	float: right;
+	li {
+		display: inline;
+		padding: 0 13px;
+	}
+	a {
+		color: $white;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 40px;
+		font-weight: bold;
+		&:hover {
+			border-bottom: 3px solid $white;
+			font-weight: bold;
+		}
+	}
+	.icon {
+		display: none;
+	}
+}
