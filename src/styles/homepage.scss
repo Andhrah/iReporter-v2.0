@@ -88,5 +88,26 @@ hr {
 }
 
 .homepage {
-  height: 420px;
+	height: 440px;
+	box-shadow: inset 2px 1px 2px 2px $black_7, inset -2px -2px 3px $white_76_7, inset 2px 2px 0 0 $white_76_7;
+	transition: all 0.2s linear;
+}
+
+.home-comment {
+	height: 32%;
+	margin-bottom: 10px;
+	h4 {
+		text-align: center;
+		color: $blue_dianne;
+		font-size: 20px;
+		border-bottom: 3px solid $blue_dianne;
+		border-radius: 15px;
+		padding: 5px 0;
+		margin: 5px;
+	}
+	p {
+		color: $blue_dianne;
+		text-align: left;
+		padding: 0 15px;
+	}
 }

@@ -13,7 +13,8 @@ const Navbar = () => (
       </div>
       <nav className="navbar" id="topnav">
         <ul>
-          <li><Link to="/all-red-flag">Incidents</Link></li>
+          <li><Link to="/redflags">Red-flags records</Link></li>
+          <li><Link to="/interventions">Intervention records</Link></li>
           <li>
             <Link to="/signup">
           Sign Up
@@ -26,14 +27,8 @@ const Navbar = () => (
               {' '}
               <i className="fa fa-user" />
             </Link>
-
           </li>
-          <li>
-            <Link to="#">
-          About Us
-            </Link>
-
-          </li>
+          <li></li>
           <li>
             <button
           type="button"

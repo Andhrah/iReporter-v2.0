@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import HomepageIncidentCard from './homepageIncidentCard';
 
 const Homepage = ({ redFlags, interventions }) => (
-  <div className="wrapper">
+  <>
     <section className="showcase">
       <div className="content">
 
@@ -61,8 +61,9 @@ const Homepage = ({ redFlags, interventions }) => (
       </div>
     </section>
 
-  </div>
+  </>
 );
+
 Homepage.propTypes = {
   redFlags: PropTypes.array,
   interventions: PropTypes.array,

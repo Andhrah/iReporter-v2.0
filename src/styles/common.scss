@@ -30,7 +30,7 @@ body {
 //@extend-elements
 //original selectors
 //.read-more, .btn-container button
-%extend_1 {
+%button {
 	padding: 10px 12px;
 	border-radius: 20px;
 	color: $blue_dianne;
@@ -43,7 +43,7 @@ body {
 	text-decoration: none;
 	align-self: center;
 	border: 3px solid $blue_dianne;
-	@extend %extend_1;
+	@extend %button;
 	&:hover {
 		background: $big_stone;
 		color: $gallery;
@@ -58,29 +58,10 @@ body {
 }
 
 .btn-container button {
-	@extend %extend_1;
+	@extend %button;
 }
 
 .btn .edit:hover {
 	background: $big_stone;
 	color: $gallery;
-}
-
-.comment {
-	height: 30%;
-	margin-bottom: 10px;
-	h4 {
-		text-align: center;
-		color: $blue_dianne;
-		font-size: 20px;
-		border-bottom: 3px solid $blue_dianne;
-		border-radius: 15px;
-		padding: 5px 0;
-		margin: 5px;
-	}
-	p {
-		color: $blue_dianne;
-		text-align: left;
-		padding: 0 15px;
-	}
 }
