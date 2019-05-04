@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import HomepageView from '../presentational/Homepage';
-import Navbar from '../presentational/Navbar';
-import Footer from '../presentational/Footer';
 import { getAllRedflags, getAllInterventions } from '../../actions';
 
 class Homepage extends Component {
@@ -20,9 +18,7 @@ class Homepage extends Component {
     const { redFlags, interventions } = this.props;
     return (
       <div>
-        <Navbar />
         <HomepageView redFlags={redFlags} interventions={interventions} />
-        <Footer />
       </div>
     );
   }

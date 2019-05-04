@@ -1,0 +1,38 @@
+.user-profile {
+	.h2-div {
+		display: flex;
+		justify-content: center;
+	}
+	h2 {
+		text-align: center;
+		background: $gallery;
+		width: 50%;
+		padding: 10px;
+		color: $blue_dianne;
+		border-radius: 10px;
+		border-bottom: 3px solid $white;
+	}
+}
+.profile-record .user-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $blue_dianne;
+	border: 2px solid $blue_dianne;
+	border-radius: 5px;
+}
+.user-list a {
+	.current {
+		color: $blue_dianne;
+		background: $gallery;
+	}
+	.list-1 {
+		padding: 10px;
+		&:hover {
+			border-bottom: 3px solid $white;
+		}
+	}
+}
+.red-flag-list:hover {
+	background: $white;
+}

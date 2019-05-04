@@ -16,14 +16,14 @@ const HomepageIncidentCard = ({ incident, type }) => {
       src="http://lorempixel.com/400/400"
       alt="red-flag incident"
     />
-      <div className="comment">
+      <div className="home-comment">
         <h4>{title}</h4>
         <p>
           {incident.comment.length <= 100 ? incident.comment : `${incident.comment.substring(0, 100)} ...`}
         </p>
       </div>
       <div>
-        <Link to="/red-flag" className="read-more">
+        <Link to="red-flag" className="read-more">
       Read more
           {' '}
           <i className="fas fa-angle-right" />
