@@ -50,7 +50,7 @@ const Interventions = ({ interventions }) => (
               </p>
             </div>
             <div>
-              <Link to="redflag" className="read-more">
+              <Link to={`redflag/${intervention.id}`} className="read-more">
                 Read more
                 {' '}
                 <i className="fas fa-angle-right" />

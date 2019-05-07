@@ -1,7 +1,7 @@
-import axios from 'axios';
 import actionTypeGenerator from './typesGenerator';
+import request from '../utils/http';
 
-export const getInterventionType = actionTypeGenerator('INTERVENTION');
+export const getInterventionType = actionTypeGenerator('INTERVENTIONS');
 
 /**
  * Action creator that is dispatched when user starts operation
@@ -40,7 +40,10 @@ export const getAllInterventionsFailure = error => ({
 export const getAllInterventions = () => async (dispatch) => {
   dispatch(getAllInterventionsLoading());
   try {
-    const response = await axios.get('https://ireporter-1.herokuapp.com/api/v1/interventions');
+    const response = await request({
+      route: 'red-flags',
+      method: 'get',
+    });
     const { data: { data } } = response;
     dispatch(getAllInterventionsSucess(data));
   } catch (err) {

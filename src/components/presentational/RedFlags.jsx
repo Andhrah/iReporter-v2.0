@@ -29,7 +29,7 @@ const RedFlags = ({ redFlags }) => (
               <p>
                 Location:
                 {' '}
-                <span><em>{redFlag.location}</em></span>
+                <span><em>{redFlag.names_involved[0]}</em></span>
                 {' '}
               </p>
             </div>
@@ -49,7 +49,7 @@ const RedFlags = ({ redFlags }) => (
               </p>
             </div>
             <div>
-              <Link to="redflag" className="read-more">
+              <Link to={`/redflag/${redFlag.id}`} className="read-more">
                 Read more
                 {' '}
                 <i className="fas fa-angle-right" />
