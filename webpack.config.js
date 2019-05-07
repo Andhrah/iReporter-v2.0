@@ -1,9 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // installed via npm
+const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
 
 const htmlPlugin = new HtmlWebpackPlugin({
   template: './public/index.html',
-  filename: './index.html'
+  filename: 'index.html'
+});
+
+const dotenvPlugin = new Dotenv();
+const envLoaderPlugin = new webpack.DefinePlugin({
+  'process.env.API_BASE_URL': JSON.stringify(process.env.API_BASE_URL),
 });
 
 module.exports = {
@@ -11,7 +18,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    // publicPath: '/',
   },
   resolve: {
     extensions: ['.jsx', '.js', '.json', '.scss', '.css']
@@ -41,5 +48,10 @@ module.exports = {
       },
     ]
   },
-  plugins: [htmlPlugin]
+  plugins: [htmlPlugin, dotenvPlugin, envLoaderPlugin],
+  devServer: {
+    contentBase: path.resolve(__dirname, './dist'),
+    historyApiFallback: true,
+    port: 8080
+  }
 };

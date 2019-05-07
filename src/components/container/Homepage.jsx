@@ -40,7 +40,7 @@ Homepage.defaultProps = {
 
 const mapStateToProps = state => ({
   redFlags: state.allRedFlags.data,
-  interventions: state.allInterventions.data
+  interventions: state.allInterventions.data,
 });
 
 const mapDispatchToProps = {

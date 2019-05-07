@@ -3,6 +3,18 @@ header {
 	min-height: 40px;
 	width: 100%;
 }
+.logout {
+	color: #274555;
+	cursor: pointer;
+	background-color:$white;
+	height: 3em;
+	width: 6em;
+	border-radius: 7px;
+	outline: none;
+	&:hover {
+		background-color: rgb(150, 120, 107);
+	}
+}
 .branding {
 	margin-top: 5px;
 	float: left;
