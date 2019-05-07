@@ -2,9 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import HomepageIncidentCard from './homepageIncidentCard';
+import Navbar from './Navbar';
 
 const Homepage = ({ redFlags, interventions }) => (
   <>
+    <Navbar
+        firstname={localStorage.getItem('firstname')}
+        lastname={localStorage.getItem('lastname')}
+        email={localStorage.getItem('email')}
+        username={localStorage.getItem('username')}
+         />
     <section className="showcase">
       <div className="content">
 

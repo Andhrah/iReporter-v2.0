@@ -8,7 +8,7 @@ const HomepageIncidentCard = ({ incident, type }) => {
   if (type === 'redFlag') {
     title = incident.corruption_methods.join(', ');
   } else if (type === 'intervention') {
-    title = incident.intervention_reasons.join(', ');
+    title = incident && incident.intervention_reasons && incident.intervention_reasons.join(', ');
   }
   return (
     <div className="incident-container-all list homepage">
@@ -23,7 +23,7 @@ const HomepageIncidentCard = ({ incident, type }) => {
         </p>
       </div>
       <div>
-        <Link to="red-flag" className="read-more">
+        <Link to="redflags" className="read-more">
       Read more
           {' '}
           <i className="fas fa-angle-right" />
