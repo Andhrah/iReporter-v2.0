@@ -1,7 +1,7 @@
-import axios from 'axios';
+import request from '../utils/http';
 import actionTypeGenerator from './typesGenerator';
 
-export const getRedFlagType = actionTypeGenerator('RED_FLAG');
+export const getRedFlagType = actionTypeGenerator('RED_FLAGS');
 
 /**
  * Action creator that is dispatched when user starts operation
@@ -40,7 +40,10 @@ export const getAllRedflagsFailure = error => ({
 export const getAllRedflags = () => async (dispatch) => {
   dispatch(getAllRedflagsLoading());
   try {
-    const response = await axios.get('https://ireporter-1.herokuapp.com/api/v1/red-flags');
+    const response = await request({
+      route: 'red-flags',
+      method: 'get',
+    });
     const { data: { data } } = response;
     dispatch(getAllRedflagsSucess(data));
   } catch (err) {

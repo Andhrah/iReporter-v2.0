@@ -3,20 +3,29 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import InterventionsView from '../presentational/Interventions';
 import { getAllInterventions } from '../../actions';
+import Navbar from '../presentational/Navbar';
 
 class Interventions extends Component {
-  componentDidMount() {
+  async componentDidMount() {
     const {
       getAllInterventions: fetchInterventions,
     } = this.props;
-    fetchInterventions();
+    await fetchInterventions();
   }
 
   render() {
     const { interventions } = this.props;
 
     return (
-      <InterventionsView interventions={interventions} />
+      <>
+        <Navbar
+          firstname={localStorage.getItem('firstname')}
+          lastname={localStorage.getItem('lastname')}
+          email={localStorage.getItem('email')}
+          username={localStorage.getItem('username')}
+          />
+        <InterventionsView interventions={interventions} />
+      </>
     );
   }
 }

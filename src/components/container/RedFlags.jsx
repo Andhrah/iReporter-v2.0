@@ -3,20 +3,30 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import RedFlagsView from '../presentational/RedFlags';
 import { getAllRedflags } from '../../actions';
+import Navbar from '../presentational/Navbar';
 
 class RedFlags extends Component {
-  componentDidMount() {
+  async componentDidMount() {
     const {
       getAllRedflags: fetchRedFlags,
     } = this.props;
-    fetchRedFlags();
+    await fetchRedFlags();
   }
 
   render() {
     const { redFlags } = this.props;
+    console.log(redFlags);
 
     return (
-      <RedFlagsView redFlags={redFlags} />
+      <>
+        <Navbar
+          firstname={localStorage.getItem('firstname')}
+          lastname={localStorage.getItem('lastname')}
+          email={localStorage.getItem('email')}
+          username={localStorage.getItem('username')}
+          />
+        <RedFlagsView redFlags={redFlags} />
+      </>
     );
   }
 }
