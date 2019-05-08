@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentLoader  test suite renders correctly 1`] = `
+<div
+  className="grid-container"
+  style={
+    Object {
+      "marginBottom": 30,
+    }
+  }
+>
+  <ContentLoader
+    height={230}
+    primaryColor="#f3f3f3"
+    secondaryColor="rgba(217, 196, 224, 0.32)"
+    speed={3}
+    width={300}
+  />
+</div>
+`;

@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "gmk7nc",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "gmk7nc",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Navbar
+      email="alexandra@test.com"
+      firstname="Andra"
+      lastname="Collins"
+      username="Alexandra"
+    >
+      <div
+        className="wrapper"
+      >
+        <header>
+          <div
+            className="branding"
+          >
+            <Link
+              to="/"
+            >
+              <a
+                href="/"
+                onClick={[Function]}
+              >
+                <img
+                  alt="iReporter logo"
+                  src={Object {}}
+                />
+              </a>
+            </Link>
+          </div>
+          <nav
+            className="navbar"
+            id="topnav"
+          >
+            <ul>
+              <li>
+                <Link
+                  to="/redflags"
+                >
+                  <a
+                    href="/redflags"
+                    onClick={[Function]}
+                  >
+                    Red-flags
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/interventions"
+                >
+                  <a
+                    href="/interventions"
+                    onClick={[Function]}
+                  >
+                    Interventions
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/create-redflag"
+                >
+                  <a
+                    href="/create-redflag"
+                    onClick={[Function]}
+                  >
+                    Report Corruption
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/create-intervention"
+                >
+                  <a
+                    href="/create-intervention"
+                    onClick={[Function]}
+                  >
+                    Call for Intervention
+                  </a>
+                </Link>
+              </li>
+              <span>
+                Andra
+                 
+              </span>
+              <span>
+                <button
+                  className="logout"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  LOG OUT
+                </button>
+              </span>
+              <li>
+                <button
+                  className="icon"
+                  onClick={[Function]}
+                  to="javascript:void(0);"
+                  type="button"
+                >
+                  <i
+                    className="fa fa-bars"
+                  />
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </Navbar>
+  </Router>
+</MemoryRouter>
+`;

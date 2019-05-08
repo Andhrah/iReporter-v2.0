@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "np07s8",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "np07s8",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Login
+      errors={
+        Object {
+          "emailError": "invalid email",
+          "passwordError": "inavlid password",
+        }
+      }
+      handleChange={[Function]}
+      handleSubmit={[Function]}
+      values={
+        Object {
+          "badHousing": "badHousing",
+          "badroad": "badroad",
+          "collapsedBridge": "collapsedBridge",
+          "describe": "describe",
+          "economy": "economy",
+          "interventionDate": "2019-05=04",
+          "interventionImages": "interventionImages.png",
+          "noElectricity": "noElectricity",
+          "otherReasons": "nothing",
+          "otherReasonsSpecify": "nothing",
+          "poorElectricity": "poorElectricity",
+          "refuseDamping": "refuseDamping",
+        }
+      }
+    >
+      <section
+        className="form-section"
+      >
+        <div
+          className="form-container"
+          id="signin-wrapper"
+        >
+          <h1>
+            Sign In
+          </h1>
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="error"
+              id="login-error"
+            />
+            <div
+              className="input-container"
+            >
+              <label
+                htmlFor="email"
+              >
+                Email/Username
+              </label>
+              <input
+                className="text-input"
+                id="email"
+                name="email"
+                onChange={[Function]}
+                required={true}
+                type="email"
+              />
+              <div
+                className="error"
+                id="email-error"
+              />
+            </div>
+            <div
+              className="input-container"
+            >
+              <label
+                htmlFor="password"
+              >
+                Password
+              </label>
+              <input
+                className="text-input"
+                id="password"
+                name="password"
+                onChange={[Function]}
+                required={true}
+                type="password"
+              />
+              <div
+                className="error"
+                id="password-error"
+              />
+            </div>
+            <button
+              className="form-primary-btn"
+              id="login"
+              type="submit"
+            >
+              Sign In
+            </button>
+          </form>
+          <div
+            className="second-btn"
+          >
+            <h4
+              className="form-h4"
+            >
+              Don't have an account?
+            </h4>
+          </div>
+          <p
+            className="repeating-linear"
+          >
+            <Link
+              className="form-secondary-btn"
+              to="signup"
+            >
+              <a
+                className="form-secondary-btn"
+                href="/signup"
+                onClick={[Function]}
+              >
+                Sign Up
+              </a>
+            </Link>
+          </p>
+        </div>
+      </section>
+    </Login>
+  </Router>
+</MemoryRouter>
+`;

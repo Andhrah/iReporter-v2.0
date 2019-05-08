@@ -12,9 +12,9 @@ import Navbar from '../presentational/Navbar';
  * @extends { React }
 */
 
-class Login extends Component {
+export class Login extends Component {
   state = {
-    value: {
+    values: {
       email: '',
       password: '',
     },
@@ -66,8 +66,8 @@ class Login extends Component {
     if (!hasError) {
       loginUser(userData);
       const { history } = this.props;
-      this.setState({ signInCompleted: true, });
       history.push('/');
+      return this.setState({ signInCompleted: true });
     }
   }
 

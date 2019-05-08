@@ -1,6 +1,6 @@
 # iReporter-v2.0
 [![Build Status](https://travis-ci.com/Andraquin/iReporter-v2.0.svg?branch=staging)](https://travis-ci.com/Andraquin/iReporter-v2.0)
-
+[![Coverage Status](https://coveralls.io/repos/github/Andraquin/iReporter-v2.0/badge.svg?branch=staging)](https://coveralls.io/github/Andraquin/iReporter-v2.0?branch=staging)
 ## Application Overview
 Corruption is a huge bane to Africa’s development. African countries must develop novel and
 localised solutions that will curb this menace, hence the birth of iReporter. iReporter enables

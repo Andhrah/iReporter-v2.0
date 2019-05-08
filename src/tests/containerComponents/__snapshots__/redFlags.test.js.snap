@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedFlags test suite renders correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "3yhtmj",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "3yhtmj",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ConnectFunction
+        getAllRedflags={[MockFunction]}
+        redFlags={
+          Array [
+            Object {
+              "comment": "Political corruption is a persistent phenomenon in Nigeria.",
+              "corruption_date": "2019-01-22T00:00:00.000Z",
+              "corruption_methods": Array [
+                "Bribery",
+                " Abuse of power",
+              ],
+              "created_by": 1,
+              "created_on": "2019-01-29T00:00:00.000Z",
+              "entity_involved": Array [
+                "custom Officer",
+                " police",
+              ],
+              "id": 20,
+              "images": Array [
+                "image1",
+                " image2",
+              ],
+              "location": "6.605874, 3.349149",
+              "names_involved": Array [
+                "Jane doe",
+                " John Bull",
+              ],
+              "status": "Under Investigation",
+              "videos": Array [
+                "video1",
+                " video2",
+              ],
+            },
+          ]
+        }
+      >
+        <RedFlags
+          getAllRedflags={[Function]}
+          redFlags={Array []}
+        >
+          <Navbar
+            email={null}
+            firstname={null}
+            lastname={null}
+            username={null}
+          >
+            <div
+              className="wrapper"
+            >
+              <header>
+                <div
+                  className="branding"
+                >
+                  <Link
+                    to="/"
+                  >
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <img
+                        alt="iReporter logo"
+                        src={Object {}}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <nav
+                  className="navbar"
+                  id="topnav"
+                >
+                  <ul>
+                    <li>
+                      <Link
+                        to="/redflags"
+                      >
+                        <a
+                          href="/redflags"
+                          onClick={[Function]}
+                        >
+                          Red-flags
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/interventions"
+                      >
+                        <a
+                          href="/interventions"
+                          onClick={[Function]}
+                        >
+                          Interventions
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/create-redflag"
+                      >
+                        <a
+                          href="/create-redflag"
+                          onClick={[Function]}
+                        >
+                          Report Corruption
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/create-intervention"
+                      >
+                        <a
+                          href="/create-intervention"
+                          onClick={[Function]}
+                        >
+                          Call for Intervention
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/signup"
+                      >
+                        <a
+                          href="/signup"
+                          onClick={[Function]}
+                        >
+                          Sign Up
+                          <i
+                            className="fa fa-user-plus"
+                          />
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/login"
+                      >
+                        <a
+                          href="/login"
+                          onClick={[Function]}
+                        >
+                          Sign In
+                           
+                          <i
+                            className="fa fa-user"
+                          />
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <button
+                        className="icon"
+                        onClick={[Function]}
+                        to="javascript:void(0);"
+                        type="button"
+                      >
+                        <i
+                          className="fa fa-bars"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+            </div>
+          </Navbar>
+          <RedFlags
+            redFlags={Array []}
+          >
+            <section
+              className="section-flex"
+            >
+              <div
+                className="jumbotron"
+              >
+                <div
+                  className="title-container"
+                >
+                  <h2>
+                    Red-flag Reports
+                  </h2>
+                  <Link
+                    to="/interventions"
+                  >
+                    <a
+                      href="/interventions"
+                      onClick={[Function]}
+                    >
+                      <em>
+                        See Intervention reports
+                      </em>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="grid-container"
+                id="red-flag-grid-container"
+              />
+            </section>
+          </RedFlags>
+        </RedFlags>
+      </ConnectFunction>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

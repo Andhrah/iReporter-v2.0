@@ -5,12 +5,12 @@ import InterventionsView from '../presentational/Interventions';
 import { getAllInterventions } from '../../actions';
 import Navbar from '../presentational/Navbar';
 
-class Interventions extends Component {
-  async componentDidMount() {
+export class Interventions extends Component {
+  componentDidMount() {
     const {
       getAllInterventions: fetchInterventions,
     } = this.props;
-    await fetchInterventions();
+    fetchInterventions();
   }
 
   render() {
@@ -41,7 +41,7 @@ Interventions.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  interventions: state.allRedFlags.data,
+  interventions: state.allInterventions.data,
 });
 
 export default connect(mapStateToProps, { getAllInterventions })(Interventions);

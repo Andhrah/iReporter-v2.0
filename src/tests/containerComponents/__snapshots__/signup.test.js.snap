@@ -1,0 +1,529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup test suite renders correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "80yrvb",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "80yrvb",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ConnectFunction
+        createIntervention={[MockFunction]}
+        history={
+          Object {
+            "push": [MockFunction],
+          }
+        }
+      >
+        <withRouter(Signup)
+          createIntervention={[MockFunction]}
+          history={
+            Object {
+              "push": [MockFunction],
+            }
+          }
+          signup={[Function]}
+        >
+          <Route>
+            <Signup
+              createIntervention={[MockFunction]}
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "canGo": [Function],
+                  "createHref": [Function],
+                  "entries": Array [
+                    Object {
+                      "hash": "",
+                      "key": "80yrvb",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                  ],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "index": 0,
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "key": "80yrvb",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "key": "80yrvb",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+              signup={[Function]}
+            >
+              <Navbar
+                email=""
+                firstname=""
+                lastname=""
+                username=""
+              >
+                <div
+                  className="wrapper"
+                >
+                  <header>
+                    <div
+                      className="branding"
+                    >
+                      <Link
+                        to="/"
+                      >
+                        <a
+                          href="/"
+                          onClick={[Function]}
+                        >
+                          <img
+                            alt="iReporter logo"
+                            src={Object {}}
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                    <nav
+                      className="navbar"
+                      id="topnav"
+                    >
+                      <ul>
+                        <li>
+                          <Link
+                            to="/redflags"
+                          >
+                            <a
+                              href="/redflags"
+                              onClick={[Function]}
+                            >
+                              Red-flags
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/interventions"
+                          >
+                            <a
+                              href="/interventions"
+                              onClick={[Function]}
+                            >
+                              Interventions
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/create-redflag"
+                          >
+                            <a
+                              href="/create-redflag"
+                              onClick={[Function]}
+                            >
+                              Report Corruption
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/create-intervention"
+                          >
+                            <a
+                              href="/create-intervention"
+                              onClick={[Function]}
+                            >
+                              Call for Intervention
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/signup"
+                          >
+                            <a
+                              href="/signup"
+                              onClick={[Function]}
+                            >
+                              Sign Up
+                              <i
+                                className="fa fa-user-plus"
+                              />
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/login"
+                          >
+                            <a
+                              href="/login"
+                              onClick={[Function]}
+                            >
+                              Sign In
+                               
+                              <i
+                                className="fa fa-user"
+                              />
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <button
+                            className="icon"
+                            onClick={[Function]}
+                            to="javascript:void(0);"
+                            type="button"
+                          >
+                            <i
+                              className="fa fa-bars"
+                            />
+                          </button>
+                        </li>
+                      </ul>
+                    </nav>
+                  </header>
+                </div>
+              </Navbar>
+              <Signup
+                errors={
+                  Object {
+                    "confirmPassword": "",
+                    "email": "",
+                    "firstname": "",
+                    "lastname": "",
+                    "othername": "",
+                    "password": "",
+                    "phoneNumber": "",
+                    "signup": "",
+                    "username": "",
+                  }
+                }
+                handleChange={[Function]}
+                handleSubmit={[Function]}
+                values={
+                  Object {
+                    "confirmPassword": "",
+                    "email": "",
+                    "firstname": "",
+                    "lastname": "",
+                    "othername": "",
+                    "password": "",
+                    "phoneNumber": "",
+                    "username": "",
+                  }
+                }
+              >
+                <div
+                  className="wrapper"
+                >
+                  <div
+                    className="form-container"
+                    id="signup-wrapper"
+                  >
+                    <h1>
+                      Sign Up
+                    </h1>
+                    <form
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="form-container-grid"
+                      >
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="firstname"
+                          >
+                            <span>
+                              *
+                            </span>
+                            First Name
+                          </label>
+                          <input
+                            className="text-input"
+                            id="firstname"
+                            name="firstname"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="firstname-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="lastname"
+                          >
+                            <span>
+                              *
+                            </span>
+                            Last Name
+                          </label>
+                          <input
+                            className="text-input"
+                            id="lastname"
+                            name="lastname"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="lastname-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="othername"
+                          >
+                            Other Name
+                          </label>
+                          <input
+                            className="text-input"
+                            id="othername"
+                            name="othername"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="othername-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="email"
+                          >
+                            <span>
+                              *
+                            </span>
+                            Email
+                          </label>
+                          <input
+                            className="text-input"
+                            id="email"
+                            name="email"
+                            onChange={[Function]}
+                            type="email"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="email-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="phoneNumber"
+                          >
+                            <span>
+                              *
+                            </span>
+                            Phone Number
+                          </label>
+                          <input
+                            className="text-input"
+                            id="phone-number"
+                            name="phoneNumber"
+                            onChange={[Function]}
+                            pattern="[0-9]{11}"
+                            title="Invalid phone number, please follow this pattern *********** e.g  08066677756"
+                            type="tel"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="phone-number-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="username"
+                          >
+                            <span>
+                              *
+                            </span>
+                            Username
+                          </label>
+                          <input
+                            className="text-input"
+                            id="username"
+                            name="username"
+                            onChange={[Function]}
+                            type="text"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="username-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="password"
+                          >
+                            <span>
+                              *
+                            </span>
+                            Password
+                          </label>
+                          <input
+                            className="text-input"
+                            id="password"
+                            name="password"
+                            onChange={[Function]}
+                            type="password"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="password-error"
+                          />
+                        </div>
+                        <div
+                          className="input-container"
+                        >
+                          <label
+                            htmlFor="confirmPassword"
+                          >
+                            <span>
+                              *
+                            </span>
+                            Confirm Password
+                          </label>
+                          <input
+                            className="text-input"
+                            id="confirm-password"
+                            name="confirmPassword"
+                            onChange={[Function]}
+                            type="password"
+                            value=""
+                          />
+                          <div
+                            className="error"
+                            id="confirm-password-error"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        className="form-primary-btn"
+                        id="signup"
+                        type="submit"
+                      >
+                        Sign Up
+                      </button>
+                    </form>
+                    <div
+                      className="second-btn"
+                    >
+                      <h4
+                        className="form-h4"
+                      >
+                        Already have an account?
+                      </h4>
+                    </div>
+                    <p
+                      className="repeating-linear"
+                    >
+                      <Link
+                        className="form-secondary-btn"
+                        to="/login"
+                      >
+                        <a
+                          className="form-secondary-btn"
+                          href="/login"
+                          onClick={[Function]}
+                        >
+                          Sign In
+                        </a>
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+              </Signup>
+            </Signup>
+          </Route>
+        </withRouter(Signup)>
+      </ConnectFunction>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

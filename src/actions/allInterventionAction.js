@@ -41,7 +41,7 @@ export const getAllInterventions = () => async (dispatch) => {
   dispatch(getAllInterventionsLoading());
   try {
     const response = await request({
-      route: 'red-flags',
+      route: 'interventions',
       method: 'get',
     });
     const { data: { data } } = response;

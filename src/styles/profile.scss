@@ -1,0 +1,96 @@
+.user-profile {
+	margin: 7% 2%;
+}
+.profile {
+	width: 30%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	background-color: $blue_dianne;
+	padding-bottom: 25px;
+	margin-bottom: 10%;
+	padding-left: 10px;
+	padding-right: 20px;
+	border-radius: 10px;
+	.details {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 3px solid $white;
+		border-radius: 10px;
+	}
+	.user-icon {
+		color: $white;
+		text-align: center;
+		color: $white;
+	}
+	.edit-profile {
+		margin-top: 20px;
+		align-self: center;
+	}
+}
+#edit-profile-btn {
+	color: $white;
+	background-color: $yellow_orange;
+	border: 3px solid $yellow_orange;
+	&:hover {
+		background: $hot_cinnamon;
+	}
+}
+.profile-record {
+	display: flex;
+	float: right;
+	flex-direction: column;
+	color: $blue_dianne;
+	background-color: $gallery;
+	padding: 10px;
+	border-radius: 10px;
+	width: 60%;
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+	h4 {
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		a {
+			color: $blue_dianne;
+			&:hover {
+				color: $big_stone;
+				border-bottom: 3px solid $blue_dianne;
+			}
+		}
+	}
+	.total-record {
+		align-self: center;
+		text-align: center;
+		.circle {
+			background-color: $blue_dianne;
+			color: $white;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			font-size: 50px;
+			padding: 5px;
+		}
+	}
+	.histroy {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h3 {
+			width: 20%;
+			margin: 0;
+		}
+		.centered {
+			text-align: center;
+		}
+	}
+}
+.number-status {
+	width: 20%;
+}
+.total-record a .circle:hover {
+	background-color: $white;
+	color: $blue_dianne;
+}

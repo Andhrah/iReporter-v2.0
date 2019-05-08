@@ -5,17 +5,16 @@ import RedFlagsView from '../presentational/RedFlags';
 import { getAllRedflags } from '../../actions';
 import Navbar from '../presentational/Navbar';
 
-class RedFlags extends Component {
-  async componentDidMount() {
+export class RedFlags extends Component {
+  componentDidMount() {
     const {
       getAllRedflags: fetchRedFlags,
     } = this.props;
-    await fetchRedFlags();
+    fetchRedFlags();
   }
 
   render() {
     const { redFlags } = this.props;
-    console.log(redFlags);
 
     return (
       <>
