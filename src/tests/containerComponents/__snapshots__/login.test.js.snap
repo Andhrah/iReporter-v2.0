@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login test suite renders correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "3kmp44",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "3kmp44",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ConnectFunction
+        createIntervention={[MockFunction]}
+        history={
+          Object {
+            "push": [MockFunction],
+          }
+        }
+      >
+        <withRouter(Login)
+          createIntervention={[MockFunction]}
+          history={
+            Object {
+              "push": [MockFunction],
+            }
+          }
+          login={[Function]}
+        >
+          <Route>
+            <Login
+              createIntervention={[MockFunction]}
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "canGo": [Function],
+                  "createHref": [Function],
+                  "entries": Array [
+                    Object {
+                      "hash": "",
+                      "key": "3kmp44",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                  ],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "index": 0,
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "key": "3kmp44",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "key": "3kmp44",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              login={[Function]}
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+            >
+              <Navbar
+                email=""
+                firstname=""
+                lastname=""
+                username=""
+              >
+                <div
+                  className="wrapper"
+                >
+                  <header>
+                    <div
+                      className="branding"
+                    >
+                      <Link
+                        to="/"
+                      >
+                        <a
+                          href="/"
+                          onClick={[Function]}
+                        >
+                          <img
+                            alt="iReporter logo"
+                            src={Object {}}
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                    <nav
+                      className="navbar"
+                      id="topnav"
+                    >
+                      <ul>
+                        <li>
+                          <Link
+                            to="/redflags"
+                          >
+                            <a
+                              href="/redflags"
+                              onClick={[Function]}
+                            >
+                              Red-flags
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/interventions"
+                          >
+                            <a
+                              href="/interventions"
+                              onClick={[Function]}
+                            >
+                              Interventions
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/create-redflag"
+                          >
+                            <a
+                              href="/create-redflag"
+                              onClick={[Function]}
+                            >
+                              Report Corruption
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/create-intervention"
+                          >
+                            <a
+                              href="/create-intervention"
+                              onClick={[Function]}
+                            >
+                              Call for Intervention
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/signup"
+                          >
+                            <a
+                              href="/signup"
+                              onClick={[Function]}
+                            >
+                              Sign Up
+                              <i
+                                className="fa fa-user-plus"
+                              />
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/login"
+                          >
+                            <a
+                              href="/login"
+                              onClick={[Function]}
+                            >
+                              Sign In
+                               
+                              <i
+                                className="fa fa-user"
+                              />
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <button
+                            className="icon"
+                            onClick={[Function]}
+                            to="javascript:void(0);"
+                            type="button"
+                          >
+                            <i
+                              className="fa fa-bars"
+                            />
+                          </button>
+                        </li>
+                      </ul>
+                    </nav>
+                  </header>
+                </div>
+              </Navbar>
+              <Login
+                errors={
+                  Object {
+                    "email": "",
+                    "password": "",
+                  }
+                }
+                handleChange={[Function]}
+                handleSubmit={[Function]}
+                values={
+                  Object {
+                    "email": "",
+                    "password": "",
+                  }
+                }
+              >
+                <section
+                  className="form-section"
+                >
+                  <div
+                    className="form-container"
+                    id="signin-wrapper"
+                  >
+                    <h1>
+                      Sign In
+                    </h1>
+                    <form
+                      onSubmit={[Function]}
+                    >
+                      <div
+                        className="error"
+                        id="login-error"
+                      />
+                      <div
+                        className="input-container"
+                      >
+                        <label
+                          htmlFor="email"
+                        >
+                          Email/Username
+                        </label>
+                        <input
+                          className="text-input"
+                          id="email"
+                          name="email"
+                          onChange={[Function]}
+                          required={true}
+                          type="email"
+                          value=""
+                        />
+                        <div
+                          className="error"
+                          id="email-error"
+                        />
+                      </div>
+                      <div
+                        className="input-container"
+                      >
+                        <label
+                          htmlFor="password"
+                        >
+                          Password
+                        </label>
+                        <input
+                          className="text-input"
+                          id="password"
+                          name="password"
+                          onChange={[Function]}
+                          required={true}
+                          type="password"
+                          value=""
+                        />
+                        <div
+                          className="error"
+                          id="password-error"
+                        />
+                      </div>
+                      <button
+                        className="form-primary-btn"
+                        id="login"
+                        type="submit"
+                      >
+                        Sign In
+                      </button>
+                    </form>
+                    <div
+                      className="second-btn"
+                    >
+                      <h4
+                        className="form-h4"
+                      >
+                        Don't have an account?
+                      </h4>
+                    </div>
+                    <p
+                      className="repeating-linear"
+                    >
+                      <Link
+                        className="form-secondary-btn"
+                        to="signup"
+                      >
+                        <a
+                          className="form-secondary-btn"
+                          href="/signup"
+                          onClick={[Function]}
+                        >
+                          Sign Up
+                        </a>
+                      </Link>
+                    </p>
+                  </div>
+                </section>
+              </Login>
+            </Login>
+          </Route>
+        </withRouter(Login)>
+      </ConnectFunction>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

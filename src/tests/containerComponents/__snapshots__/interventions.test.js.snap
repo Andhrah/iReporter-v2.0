@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interventions test suite renders correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "swddp9",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "swddp9",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ConnectFunction
+        getAllInterventions={[MockFunction]}
+        interventions={
+          Array [
+            Object {
+              "comment": "We need government intervention",
+              "created_by": 2,
+              "created_on": "2018-12-29T00:00:00.000Z",
+              "id": 9,
+              "images": Array [
+                "image",
+              ],
+              "intervention_reasons": Array [
+                "Bribery",
+                "emblezzlement",
+              ],
+              "location": "6.605874, 8.34917",
+              "status": "Under Investigation",
+              "videos": Array [
+                "video",
+              ],
+            },
+          ]
+        }
+      >
+        <Interventions
+          getAllInterventions={[Function]}
+          interventions={Array []}
+        >
+          <Navbar
+            email={null}
+            firstname={null}
+            lastname={null}
+            username={null}
+          >
+            <div
+              className="wrapper"
+            >
+              <header>
+                <div
+                  className="branding"
+                >
+                  <Link
+                    to="/"
+                  >
+                    <a
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      <img
+                        alt="iReporter logo"
+                        src={Object {}}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <nav
+                  className="navbar"
+                  id="topnav"
+                >
+                  <ul>
+                    <li>
+                      <Link
+                        to="/redflags"
+                      >
+                        <a
+                          href="/redflags"
+                          onClick={[Function]}
+                        >
+                          Red-flags
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/interventions"
+                      >
+                        <a
+                          href="/interventions"
+                          onClick={[Function]}
+                        >
+                          Interventions
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/create-redflag"
+                      >
+                        <a
+                          href="/create-redflag"
+                          onClick={[Function]}
+                        >
+                          Report Corruption
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/create-intervention"
+                      >
+                        <a
+                          href="/create-intervention"
+                          onClick={[Function]}
+                        >
+                          Call for Intervention
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/signup"
+                      >
+                        <a
+                          href="/signup"
+                          onClick={[Function]}
+                        >
+                          Sign Up
+                          <i
+                            className="fa fa-user-plus"
+                          />
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/login"
+                      >
+                        <a
+                          href="/login"
+                          onClick={[Function]}
+                        >
+                          Sign In
+                           
+                          <i
+                            className="fa fa-user"
+                          />
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <button
+                        className="icon"
+                        onClick={[Function]}
+                        to="javascript:void(0);"
+                        type="button"
+                      >
+                        <i
+                          className="fa fa-bars"
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+            </div>
+          </Navbar>
+          <Interventions
+            interventions={Array []}
+          >
+            <section
+              className="section-flex"
+            >
+              <div
+                className="jumbotron"
+              >
+                <div
+                  className="title-container"
+                >
+                  <h2>
+                    Interventions Reports
+                  </h2>
+                  <Link
+                    to="/redflags"
+                  >
+                    <a
+                      href="/redflags"
+                      onClick={[Function]}
+                    >
+                      <em>
+                        See Red-Flag reports
+                      </em>
+                    </a>
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="grid-container"
+                id="red-flag-grid-container"
+              />
+            </section>
+          </Interventions>
+        </Interventions>
+      </ConnectFunction>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

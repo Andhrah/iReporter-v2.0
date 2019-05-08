@@ -48,7 +48,7 @@ const Homepage = ({ redFlags, interventions }) => (
       </h2>
       <div className="grid-container">
         {
-        redFlags.splice(0, 4).map(redFlag => (
+        redFlags.length > 0 && redFlags.splice(0, 4).map(redFlag => (
           <HomepageIncidentCard key={redFlag.id} incident={redFlag} type="redFlag" />
         ))
       }
@@ -61,7 +61,7 @@ const Homepage = ({ redFlags, interventions }) => (
       </h2>
       <div className="grid-container">
         {
-          interventions.splice(0, 4).map(intervention => (
+          interventions.length > 0 && interventions.splice(0, 4).map(intervention => (
             <HomepageIncidentCard key={intervention.id} incident={intervention} type="intervention" />
           ))
         }

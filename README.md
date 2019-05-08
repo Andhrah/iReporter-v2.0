@@ -1,5 +1,6 @@
 # iReporter-v2.0
 [![Build Status](https://travis-ci.com/Andraquin/iReporter-v2.0.svg?branch=staging)](https://travis-ci.com/Andraquin/iReporter-v2.0)
+[![Coverage Status](https://coveralls.io/repos/github/Andraquin/iReporter-v2.0/badge.svg)](https://coveralls.io/github/Andraquin/iReporter-v2.0)
 
 ## Application Overview
 Corruption is a huge bane to Africa’s development. African countries must develop novel and

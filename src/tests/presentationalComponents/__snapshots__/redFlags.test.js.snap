@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedFlags test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "myo13b",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "myo13b",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <RedFlags
+      redFlags={
+        Array [
+          Object {
+            "comment": "Political corruption is a persistent phenomenon in Nigeria.",
+            "corruption_date": "2019-01-22T00:00:00.000Z",
+            "corruption_methods": Array [
+              "Bribery",
+              " Abuse of power",
+            ],
+            "created_by": 1,
+            "created_on": "2019-01-29T00:00:00.000Z",
+            "entity_involved": Array [
+              "custom Officer",
+              " police",
+            ],
+            "id": 20,
+            "images": Array [
+              "image1",
+              " image2",
+            ],
+            "location": "6.605874, 3.349149",
+            "names_involved": Array [
+              "Jane doe",
+              " John Bull",
+            ],
+            "status": "Under Investigation",
+            "videos": Array [
+              "video1",
+              " video2",
+            ],
+          },
+        ]
+      }
+    >
+      <section
+        className="section-flex"
+      >
+        <div
+          className="jumbotron"
+        >
+          <div
+            className="title-container"
+          >
+            <h2>
+              Red-flag Reports
+            </h2>
+            <Link
+              to="/interventions"
+            >
+              <a
+                href="/interventions"
+                onClick={[Function]}
+              >
+                <em>
+                  See Intervention reports
+                </em>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div
+          className="grid-container"
+          id="red-flag-grid-container"
+        >
+          <div
+            className="incident-container-all list incidents"
+            key="20"
+          >
+            <Image
+              alt="red-flag incident"
+              src="http://lorempixel.com/400/400"
+            >
+              <img
+                alt="red-flag incident"
+                className="red-flag-image"
+                src="http://lorempixel.com/400/400"
+              />
+            </Image>
+            <div
+              className="author"
+              id="created-by"
+            >
+              <em
+                id="created-on"
+              >
+                created on Tue Jan 29 2019 by
+              </em>
+               
+              1
+            </div>
+            <div
+              className="location"
+            >
+              <p>
+                Location:
+                 
+                <span>
+                  <em>
+                    Jane doe
+                  </em>
+                </span>
+                 
+              </p>
+            </div>
+            <div
+              className="status"
+            >
+              <p
+                className="none"
+              >
+                Status:
+                 
+                <span>
+                  <em>
+                    Under Investigation
+                  </em>
+                </span>
+              </p>
+            </div>
+            <div
+              className="comment"
+            >
+              <h4>
+                Bribery,  Abuse of power
+              </h4>
+              <p>
+                Political corruption is a persistent phenomenon in Nigeria.
+              </p>
+            </div>
+            <div>
+              <Link
+                className="read-more"
+                to="/redflag/20"
+              >
+                <a
+                  className="read-more"
+                  href="/redflag/20"
+                  onClick={[Function]}
+                >
+                  Read more
+                   
+                  <i
+                    className="fas fa-angle-right"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </RedFlags>
+  </Router>
+</MemoryRouter>
+`;

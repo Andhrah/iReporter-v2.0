@@ -1,0 +1,358 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage test suite renders correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "u0vdts",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "u0vdts",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ConnectFunction
+        interventions={
+          Array [
+            Object {
+              "comment": "We need government intervention",
+              "created_by": 2,
+              "created_on": "2018-12-29T00:00:00.000Z",
+              "id": 9,
+              "images": Array [
+                "image",
+              ],
+              "intervention_reasons": Array [
+                "Bribery",
+                "emblezzlement",
+              ],
+              "location": "6.605874, 8.34917",
+              "status": "Under Investigation",
+              "videos": Array [
+                "video",
+              ],
+            },
+          ]
+        }
+        redFlags={
+          Array [
+            Object {
+              "comment": "Political corruption is a persistent phenomenon in Nigeria.",
+              "corruption_date": "2019-01-22T00:00:00.000Z",
+              "corruption_methods": Array [
+                "Bribery",
+                " Abuse of power",
+              ],
+              "created_by": 1,
+              "created_on": "2019-01-29T00:00:00.000Z",
+              "entity_involved": Array [
+                "custom Officer",
+                " police",
+              ],
+              "id": 21,
+              "images": Array [
+                "image1",
+                " image2",
+              ],
+              "location": "6.605874, 3.349149",
+              "names_involved": Array [
+                "Jane doe",
+                " John Bull",
+              ],
+              "status": "Under Investigation",
+              "videos": Array [
+                "video1",
+                " video2",
+              ],
+            },
+            Object {
+              "comment": "Political corruption is a persistent phenomenon in Nigeria.",
+              "corruption_date": "2019-01-22T00:00:00.000Z",
+              "corruption_methods": Array [
+                "Bribery",
+                " Abuse of power",
+              ],
+              "created_by": 1,
+              "created_on": "2019-01-29T00:00:00.000Z",
+              "entity_involved": Array [
+                "custom Officer",
+                " police",
+              ],
+              "id": 20,
+              "images": Array [
+                "image1",
+                " image2",
+              ],
+              "location": "6.605874, 3.349149",
+              "names_involved": Array [
+                "Jane doe",
+                " John Bull",
+              ],
+              "status": "Under Investigation",
+              "videos": Array [
+                "video1",
+                " video2",
+              ],
+            },
+          ]
+        }
+      >
+        <Homepage
+          getAllInterventions={[Function]}
+          getAllRedflags={[Function]}
+          interventions={Array []}
+          redFlags={Array []}
+        >
+          <div>
+            <Homepage
+              interventions={Array []}
+              redFlags={Array []}
+            >
+              <Navbar
+                email={null}
+                firstname={null}
+                lastname={null}
+                username={null}
+              >
+                <div
+                  className="wrapper"
+                >
+                  <header>
+                    <div
+                      className="branding"
+                    >
+                      <Link
+                        to="/"
+                      >
+                        <a
+                          href="/"
+                          onClick={[Function]}
+                        >
+                          <img
+                            alt="iReporter logo"
+                            src={Object {}}
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                    <nav
+                      className="navbar"
+                      id="topnav"
+                    >
+                      <ul>
+                        <li>
+                          <Link
+                            to="/redflags"
+                          >
+                            <a
+                              href="/redflags"
+                              onClick={[Function]}
+                            >
+                              Red-flags
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/interventions"
+                          >
+                            <a
+                              href="/interventions"
+                              onClick={[Function]}
+                            >
+                              Interventions
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/create-redflag"
+                          >
+                            <a
+                              href="/create-redflag"
+                              onClick={[Function]}
+                            >
+                              Report Corruption
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/create-intervention"
+                          >
+                            <a
+                              href="/create-intervention"
+                              onClick={[Function]}
+                            >
+                              Call for Intervention
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/signup"
+                          >
+                            <a
+                              href="/signup"
+                              onClick={[Function]}
+                            >
+                              Sign Up
+                              <i
+                                className="fa fa-user-plus"
+                              />
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/login"
+                          >
+                            <a
+                              href="/login"
+                              onClick={[Function]}
+                            >
+                              Sign In
+                               
+                              <i
+                                className="fa fa-user"
+                              />
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <button
+                            className="icon"
+                            onClick={[Function]}
+                            to="javascript:void(0);"
+                            type="button"
+                          >
+                            <i
+                              className="fa fa-bars"
+                            />
+                          </button>
+                        </li>
+                      </ul>
+                    </nav>
+                  </header>
+                </div>
+              </Navbar>
+              <section
+                className="showcase"
+              >
+                <div
+                  className="content"
+                >
+                  <div
+                    className="title"
+                  >
+                    Welcome to iReporter
+                  </div>
+                  <div
+                    className="text"
+                  >
+                    You can report
+                     
+                    <em
+                      id="corrupt"
+                    >
+                      corruption
+                    </em>
+                     
+                    or call for government
+                     
+                    <em>
+                      intervention.
+                    </em>
+                     
+                    All reports are carefully assessed.
+                  </div>
+                  <hr />
+                  <Link
+                    className="btn-get-start"
+                    to="/signup"
+                  >
+                    <a
+                      className="btn-get-start"
+                      href="/signup"
+                      onClick={[Function]}
+                    >
+                      Get Started!
+                       
+                      <i
+                        className="fas fa-angle-double-right"
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div
+                  className="overlay"
+                />
+              </section>
+              <section
+                className="home-section"
+              >
+                <h2
+                  className="home-h2"
+                >
+                  Latest Red-flag Incident Records
+                </h2>
+                <div
+                  className="grid-container"
+                />
+              </section>
+              <section
+                className="home-section"
+              >
+                <h2
+                  className="home-h2"
+                >
+                  Latest Intervention Incident Records
+                </h2>
+                <div
+                  className="grid-container"
+                />
+              </section>
+            </Homepage>
+          </div>
+        </Homepage>
+      </ConnectFunction>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

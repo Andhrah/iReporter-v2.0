@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RedFlag test suite renders correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "1lpkn1",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "1lpkn1",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ConnectFunction
+        getSingleRedflag={[MockFunction]}
+        match={
+          Object {
+            "params": Object {
+              "id": 1,
+            },
+          }
+        }
+        singleRedFlag={
+          Object {
+            "data": Array [
+              "first value",
+              "second value",
+            ],
+            "loading": true,
+          }
+        }
+      >
+        <RedFlag
+          getSingleRedflag={[Function]}
+          match={
+            Object {
+              "params": Object {
+                "id": 1,
+              },
+            }
+          }
+          singleRedFlag={
+            Object {
+              "data": Array [
+                Object {
+                  "comment": "",
+                  "corruption_date": "",
+                  "corruption_methods": Array [],
+                  "created_by": null,
+                  "created_on": "",
+                  "entity_involved": Array [],
+                  "id": null,
+                  "images": Array [],
+                  "location": "",
+                  "names_involved": Array [],
+                  "status": "",
+                  "videos": Array [],
+                },
+              ],
+              "loading": true,
+            }
+          }
+        />
+      </ConnectFunction>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

@@ -2,6 +2,7 @@
 import React from 'react';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+require('jest-localstorage-mock');
 
 // React I6 Enzyme Adapter
 Enzyme.configure({ adapter: new Adapter() });

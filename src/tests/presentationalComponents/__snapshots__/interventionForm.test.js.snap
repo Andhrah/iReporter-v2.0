@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InterventionForm  test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "wxdh0u",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "wxdh0u",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <InterventionForm
+      handleChange={[Function]}
+      handleSubmit={[Function]}
+      values={
+        Object {
+          "badHousing": "badHousing",
+          "badroad": "badroad",
+          "collapsedBridge": "collapsedBridge",
+          "describe": "describe",
+          "economy": "economy",
+          "interventionDate": "2019-05=04",
+          "interventionImages": "interventionImages.png",
+          "noElectricity": "noElectricity",
+          "otherReasons": "nothing",
+          "otherReasonsSpecify": "nothing",
+          "poorElectricity": "poorElectricity",
+          "refuseDamping": "refuseDamping",
+        }
+      }
+    >
+      <div
+        className="report-form-container"
+      >
+        <h3>
+          Call for Government
+           
+          <span>
+            Intervention
+          </span>
+        </h3>
+        <form
+          className="report-form"
+          onSubmit={[Function]}
+        >
+          <p>
+            Reasons for intervention
+          </p>
+          <div
+            className="first-checkbox-container"
+          >
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="economy"
+                onChange={[Function]}
+                type="checkbox"
+                value="economy"
+              />
+              <label
+                htmlFor="economy"
+              >
+                Economy
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="badroad"
+                onChange={[Function]}
+                type="checkbox"
+                value="badroad"
+              />
+              <label
+                htmlFor="badroad"
+              >
+                Bad road
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="noElectricity"
+                onChange={[Function]}
+                type="checkbox"
+                value="noElectricity"
+              />
+              <label
+                htmlFor="noElectricity"
+              >
+                No electricity
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="poorElectricity"
+                onChange={[Function]}
+                type="checkbox"
+                value="poorElectricity"
+              />
+              <label
+                htmlFor="poorElectricity"
+              >
+                Poor electricity
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="refuseDamping"
+                onChange={[Function]}
+                type="checkbox"
+                value="refuseDamping"
+              />
+              <label
+                htmlFor="refuseDamping"
+              >
+                No provision refuse damping
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="badHousing"
+                onChange={[Function]}
+                type="checkbox"
+                value="badHousing"
+              />
+              <label
+                htmlFor="badHousing"
+              >
+                Housing under power tension
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="collapsedBridge"
+                onChange={[Function]}
+                type="checkbox"
+                value="collapsedBridge"
+              />
+              <label
+                htmlFor="collapsedBridge"
+              >
+                Collapse
+              </label>
+            </div>
+            <div
+              className="checkbox-container"
+            >
+              <input
+                name="otherReasons"
+                onChange={[Function]}
+                type="checkbox"
+                value="nothing"
+              />
+              <label
+                htmlFor="otherReasons"
+              >
+                Others
+              </label>
+            </div>
+          </div>
+          <div
+            className="checkbox-container"
+          >
+            <label
+              htmlFor="otherReasonsSpecify"
+            >
+              If others, please specify
+            </label>
+            <input
+              name="otherReasonsSpecify"
+              onChange={[Function]}
+              type="text"
+              value="nothing"
+            />
+          </div>
+          <p>
+            Where did it happen?
+          </p>
+          <label
+            htmlFor="namesInvolved"
+          >
+            Location
+          </label>
+          <input
+            id="names-involved"
+            name="namesInvolved"
+            onChange={[Function]}
+            required={true}
+            style={
+              Object {
+                "fontSize": 17,
+                "height": 40,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+              }
+            }
+          />
+          <div
+            className="checkbox-container"
+          >
+            <p>
+              Please describe what happened?
+            </p>
+            <textarea
+              cols={50}
+              name="describe"
+              onChange={[Function]}
+              placeholder="Enter text here"
+              rows={10}
+              value="describe"
+            />
+          </div>
+          <button
+            className="report-button"
+            type="submit"
+          >
+            Call For Intervention
+          </button>
+        </form>
+      </div>
+    </InterventionForm>
+  </Router>
+</MemoryRouter>
+`;

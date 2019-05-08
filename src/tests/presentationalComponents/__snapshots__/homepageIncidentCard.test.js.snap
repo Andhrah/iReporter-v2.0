@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`homepageIncidentCard test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "aitxge",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "aitxge",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <HomepageIncidentCard
+      incident={
+        Object {
+          "comment": "this is ared flag",
+          "corruption_methods": Array [
+            "theft",
+          ],
+        }
+      }
+      type="intervention"
+    >
+      <div
+        className="incident-container-all list homepage"
+      >
+        <Image
+          alt="red-flag incident"
+          src="http://lorempixel.com/400/400"
+        >
+          <img
+            alt="red-flag incident"
+            className="red-flag-image"
+            src="http://lorempixel.com/400/400"
+          />
+        </Image>
+        <div
+          className="home-comment"
+        >
+          <h4 />
+          <p>
+            this is ared flag
+          </p>
+        </div>
+        <div>
+          <Link
+            className="read-more"
+            to="redflag"
+          >
+            <a
+              className="read-more"
+              href="/redflag"
+              onClick={[Function]}
+            >
+              Read more
+               
+              <i
+                className="fas fa-angle-right"
+              />
+            </a>
+          </Link>
+        </div>
+      </div>
+    </HomepageIncidentCard>
+  </Router>
+</MemoryRouter>
+`;
