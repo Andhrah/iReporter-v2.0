@@ -23,7 +23,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "utoy5u",
+              "key": "w4vmlp",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -37,7 +37,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "utoy5u",
+            "key": "w4vmlp",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -192,7 +192,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
                 "current": null,
               }
             }
-            selectedDay={2019-05-08T08:59:30.036Z}
+            selectedDay={2019-05-08T10:26:19.446Z}
             values={
               Object {
                 "bribery": "Bribery",
@@ -773,7 +773,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
                     }
                     enableOutsideDaysClick={true}
                     fixedWeeks={false}
-                    initialMonth={2019-05-08T08:59:29.925Z}
+                    initialMonth={2019-05-08T10:26:19.372Z}
                     labels={
                       Object {
                         "nextMonth": "Next Month",
@@ -846,7 +846,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
                     renderWeek={[Function]}
                     required={true}
                     reverseMonths={false}
-                    selectedDays={2019-05-08T08:59:30.036Z}
+                    selectedDays={2019-05-08T10:26:19.446Z}
                     showOutsideDays={false}
                     showWeekDays={true}
                     showWeekNumbers={false}
@@ -1024,7 +1024,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
                             enableOutsideDaysClick={true}
                             firstDayOfWeek={0}
                             fixedWeeks={false}
-                            initialMonth={2019-05-08T08:59:29.925Z}
+                            initialMonth={2019-05-08T10:26:19.372Z}
                             key="0"
                             labels={
                               Object {
@@ -1100,7 +1100,7 @@ exports[`CreateRedFlag test suite renders correctly 1`] = `
                             renderWeek={[Function]}
                             required={true}
                             reverseMonths={false}
-                            selectedDays={2019-05-08T08:59:30.036Z}
+                            selectedDays={2019-05-08T10:26:19.446Z}
                             showOutsideDays={false}
                             showWeekDays={true}
                             showWeekNumbers={false}

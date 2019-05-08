@@ -12,7 +12,7 @@ exports[`InterventionForm  test suite renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "wxdh0u",
+            "key": "ni7k21",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`InterventionForm  test suite renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "wxdh0u",
+          "key": "ni7k21",
           "pathname": "/",
           "search": "",
           "state": undefined,
