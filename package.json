@@ -7,7 +7,7 @@
     "start": "npm run build && node index.js ",
     "start:dev": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production --config webpack.config.js",
-    "test": "jest --coverage",
+    "test": "jest --coverage -u",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
