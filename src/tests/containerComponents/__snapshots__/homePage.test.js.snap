@@ -23,7 +23,7 @@ exports[`Homepage test suite renders correctly 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "u0vdts",
+              "key": "5r71sa",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -37,7 +37,7 @@ exports[`Homepage test suite renders correctly 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "u0vdts",
+            "key": "5r71sa",
             "pathname": "/",
             "search": "",
             "state": undefined,

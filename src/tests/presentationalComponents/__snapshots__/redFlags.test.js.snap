@@ -12,7 +12,7 @@ exports[`RedFlags test suite renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "myo13b",
+            "key": "88gj0f",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`RedFlags test suite renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "myo13b",
+          "key": "88gj0f",
           "pathname": "/",
           "search": "",
           "state": undefined,

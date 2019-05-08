@@ -12,7 +12,7 @@ exports[`Interventions test suite renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "br321e",
+            "key": "qp6a0y",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`Interventions test suite renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "br321e",
+          "key": "qp6a0y",
           "pathname": "/",
           "search": "",
           "state": undefined,
