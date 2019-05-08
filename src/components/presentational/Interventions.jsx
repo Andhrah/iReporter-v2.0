@@ -21,9 +21,9 @@ const Interventions = ({ interventions }) => (
           <div className="incident-container-all list incidents" key={intervention.id}>
             <Image src="http://lorempixel.com/400/400" alt="red-flag incident" />
             <div id="created-by" className="author">
-              <em id="created-on">{`created on ${new Date(intervention.created_on).toDateString()} by`}</em>
+              <em id="created-on">{`created on ${new Date(intervention.created_on).toDateString()}`}</em>
               {' '}
-              {intervention.created_by}
+              {/* {intervention.created_by} */}
             </div>
             <div className="location">
               <p>

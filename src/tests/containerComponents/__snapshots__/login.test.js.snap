@@ -23,7 +23,7 @@ exports[`Login test suite renders correctly 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "3kmp44",
+              "key": "mycnuj",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -37,7 +37,7 @@ exports[`Login test suite renders correctly 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "3kmp44",
+            "key": "mycnuj",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -76,7 +76,7 @@ exports[`Login test suite renders correctly 1`] = `
                   "entries": Array [
                     Object {
                       "hash": "",
-                      "key": "3kmp44",
+                      "key": "mycnuj",
                       "pathname": "/",
                       "search": "",
                       "state": undefined,
@@ -90,7 +90,7 @@ exports[`Login test suite renders correctly 1`] = `
                   "listen": [Function],
                   "location": Object {
                     "hash": "",
-                    "key": "3kmp44",
+                    "key": "mycnuj",
                     "pathname": "/",
                     "search": "",
                     "state": undefined,
@@ -102,7 +102,7 @@ exports[`Login test suite renders correctly 1`] = `
               location={
                 Object {
                   "hash": "",
-                  "key": "3kmp44",
+                  "key": "mycnuj",
                   "pathname": "/",
                   "search": "",
                   "state": undefined,

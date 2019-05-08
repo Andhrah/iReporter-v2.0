@@ -23,7 +23,7 @@ exports[`Interventions test suite renders correctly 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "swddp9",
+              "key": "mjgmpk",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -37,7 +37,7 @@ exports[`Interventions test suite renders correctly 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "swddp9",
+            "key": "mjgmpk",
             "pathname": "/",
             "search": "",
             "state": undefined,

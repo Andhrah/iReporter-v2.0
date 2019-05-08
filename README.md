@@ -1,6 +1,6 @@
 # iReporter-v2.0
 [![Build Status](https://travis-ci.com/Andraquin/iReporter-v2.0.svg?branch=staging)](https://travis-ci.com/Andraquin/iReporter-v2.0)
-[![Coverage Status](https://coveralls.io/repos/github/Andraquin/iReporter-v2.0/badge.svg?branch=staging)](https://coveralls.io/github/Andraquin/iReporter-v2.0?branch=staging)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8a2b6f07fa1a9f5f9de2/test_coverage)](https://codeclimate.com/github/Andraquin/iReporter-v2.0/test_coverage)
 ## Application Overview
 Corruption is a huge bane to Africa’s development. African countries must develop novel and
 localised solutions that will curb this menace, hence the birth of iReporter. iReporter enables
@@ -30,7 +30,7 @@ general public. Users can also report on things that needs government interventi
 
 ## Project links
 
-- [Heroku](https://ireporter-1.herokuapp.com/api/v1/red-flags)
+- [Heroku](https://ireporter-frontend-staging.herokuapp.com/)
 - [Pivotal-Tracker-Board](https://www.pivotaltracker.com/n/projects/2313073)
 
 ## Setup
@@ -96,14 +96,12 @@ Running unit tests.
 
 ### Testing tools
 
-- [Mocha](https://mochajs.org/) - A test framework.
-- [Chai](http://chaijs.com) -  Assertion library.
-- [Coveralls](https://coveralls.iog) - code coverage tool.
+- [Jest](https://jestjs.io/) - A test framework.
+- [Code-climate](https://codeclimate.com) - code coverage tool.
+- [Circle-Ci](https://circleci.com) - Continuous integration 
 
 ### Technologies and Tools/Dependencies
 
-- [Nodejs](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
 - [Babel](https://babeljs.io) - Javascript Transpiler/Compiler.
 - [Eslint](https://eslint.org/) 
 - [Airbnb](https://www.npmjs.com/package/eslint-config-airbnb) style [guide](https://github.com/airbnb/javascript)

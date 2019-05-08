@@ -12,7 +12,7 @@ exports[`Navbar test suite renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "gmk7nc",
+            "key": "j6p0bb",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`Navbar test suite renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "gmk7nc",
+          "key": "j6p0bb",
           "pathname": "/",
           "search": "",
           "state": undefined,

@@ -12,7 +12,7 @@ exports[`Login test suite renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "np07s8",
+            "key": "m8bmzm",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`Login test suite renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "np07s8",
+          "key": "m8bmzm",
           "pathname": "/",
           "search": "",
           "state": undefined,

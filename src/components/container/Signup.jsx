@@ -92,8 +92,8 @@ export class Signup extends Component {
     if (!hasError) {
       signupUser(userData);
       const { history } = this.props;
-      this.setState({ signUpCompleted: true, });
       history.push('/');
+      return this.setState({ signUpCompleted: true, });
     }
   }
 

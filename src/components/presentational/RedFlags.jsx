@@ -21,9 +21,9 @@ const RedFlags = ({ redFlags }) => (
           <div className="incident-container-all list incidents" key={redFlag.id}>
             <Image src="http://lorempixel.com/400/400" alt="red-flag incident" />
             <div id="created-by" className="author">
-              <em id="created-on">{`created on ${new Date(redFlag.created_on).toDateString()} by`}</em>
+              <em id="created-on">{`created on ${new Date(redFlag.created_on).toDateString()}`}</em>
               {' '}
-              {redFlag.created_by}
+              {/* {redFlag.created_by} */}
             </div>
             <div className="location">
               <p>
