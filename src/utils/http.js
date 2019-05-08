@@ -10,8 +10,6 @@ import axios from 'axios';
  * @returns {Promise} The axios promise
  */
 
-const token = localStorage.getItem('access_token');
-axios.defaults.headers.common.Authorization = token;
 
 const request = async (
   {
@@ -20,40 +18,18 @@ const request = async (
     payload,
   }
 ) => {
-  // const { token } = JSON.parse(persisted.user);
+  const token = localStorage.getItem('access_token');
 
   method = method || 'get';
-  // const headers = {
-  //   Authorization: `Bearer ${token}`,
-  // };
-  // if (!token) {
-  //   delete headers.Authorization;
-  // }
+
   return axios({
     data: payload,
     url: `${process.env.API_BASE_URL}/${route}`,
     method,
-    // headers
+    headers: {
+      Authorization: token
+    },
   });
 };
-
-// const request = async () => {
-//   const url = 'https://ireporter-1.herokuapp.com/api/v1/auth/signup';
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//       Accept: 'application/json',
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify({
-//       firstname,
-//       lastname,
-//       othername,
-//       email,
-//       phoneNumber,
-//       username,
-//       password,
-//     }),
-//   };
 
 export default request;

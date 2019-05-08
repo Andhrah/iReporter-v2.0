@@ -12,7 +12,7 @@ import Navbar from '../presentational/Navbar';
  * @extends { React }
  */
 
-class Signup extends Component {
+export class Signup extends Component {
   state = {
     values: {
       firstname: '',

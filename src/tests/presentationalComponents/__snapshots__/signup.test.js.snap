@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup  test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "zfht0f",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "zfht0f",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Signup
+      errors={
+        Object {
+          "emailError": "invalid email",
+          "passwordError": "inavlid password",
+        }
+      }
+      handleChange={[Function]}
+      handleSubmit={[Function]}
+      values={
+        Object {
+          "badHousing": "badHousing",
+          "badroad": "badroad",
+          "collapsedBridge": "collapsedBridge",
+          "describe": "describe",
+          "economy": "economy",
+          "interventionDate": "2019-05=04",
+          "interventionImages": "interventionImages.png",
+          "noElectricity": "noElectricity",
+          "otherReasons": "nothing",
+          "otherReasonsSpecify": "nothing",
+          "poorElectricity": "poorElectricity",
+          "refuseDamping": "refuseDamping",
+        }
+      }
+    >
+      <div
+        className="wrapper"
+      >
+        <div
+          className="form-container"
+          id="signup-wrapper"
+        >
+          <h1>
+            Sign Up
+          </h1>
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="form-container-grid"
+            >
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="firstname"
+                >
+                  <span>
+                    *
+                  </span>
+                  First Name
+                </label>
+                <input
+                  className="text-input"
+                  id="firstname"
+                  name="firstname"
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="error"
+                  id="firstname-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="lastname"
+                >
+                  <span>
+                    *
+                  </span>
+                  Last Name
+                </label>
+                <input
+                  className="text-input"
+                  id="lastname"
+                  name="lastname"
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="error"
+                  id="lastname-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="othername"
+                >
+                  Other Name
+                </label>
+                <input
+                  className="text-input"
+                  id="othername"
+                  name="othername"
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="error"
+                  id="othername-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="email"
+                >
+                  <span>
+                    *
+                  </span>
+                  Email
+                </label>
+                <input
+                  className="text-input"
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  type="email"
+                />
+                <div
+                  className="error"
+                  id="email-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="phoneNumber"
+                >
+                  <span>
+                    *
+                  </span>
+                  Phone Number
+                </label>
+                <input
+                  className="text-input"
+                  id="phone-number"
+                  name="phoneNumber"
+                  onChange={[Function]}
+                  pattern="[0-9]{11}"
+                  title="Invalid phone number, please follow this pattern *********** e.g  08066677756"
+                  type="tel"
+                />
+                <div
+                  className="error"
+                  id="phone-number-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="username"
+                >
+                  <span>
+                    *
+                  </span>
+                  Username
+                </label>
+                <input
+                  className="text-input"
+                  id="username"
+                  name="username"
+                  onChange={[Function]}
+                  type="text"
+                />
+                <div
+                  className="error"
+                  id="username-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="password"
+                >
+                  <span>
+                    *
+                  </span>
+                  Password
+                </label>
+                <input
+                  className="text-input"
+                  id="password"
+                  name="password"
+                  onChange={[Function]}
+                  type="password"
+                />
+                <div
+                  className="error"
+                  id="password-error"
+                />
+              </div>
+              <div
+                className="input-container"
+              >
+                <label
+                  htmlFor="confirmPassword"
+                >
+                  <span>
+                    *
+                  </span>
+                  Confirm Password
+                </label>
+                <input
+                  className="text-input"
+                  id="confirm-password"
+                  name="confirmPassword"
+                  onChange={[Function]}
+                  type="password"
+                />
+                <div
+                  className="error"
+                  id="confirm-password-error"
+                />
+              </div>
+            </div>
+            <button
+              className="form-primary-btn"
+              id="signup"
+              type="submit"
+            >
+              Sign Up
+            </button>
+          </form>
+          <div
+            className="second-btn"
+          >
+            <h4
+              className="form-h4"
+            >
+              Already have an account?
+            </h4>
+          </div>
+          <p
+            className="repeating-linear"
+          >
+            <Link
+              className="form-secondary-btn"
+              to="/login"
+            >
+              <a
+                className="form-secondary-btn"
+                href="/login"
+                onClick={[Function]}
+              >
+                Sign In
+              </a>
+            </Link>
+          </p>
+        </div>
+      </div>
+    </Signup>
+  </Router>
+</MemoryRouter>
+`;

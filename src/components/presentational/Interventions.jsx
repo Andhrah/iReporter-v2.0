@@ -17,7 +17,7 @@ const Interventions = ({ interventions }) => (
     </div>
     <div className="grid-container" id="red-flag-grid-container">
       {
-        interventions.map(intervention => (
+        interventions.length > 0 && interventions.map(intervention => (
           <div className="incident-container-all list incidents" key={intervention.id}>
             <Image src="http://lorempixel.com/400/400" alt="red-flag incident" />
             <div id="created-by" className="author">

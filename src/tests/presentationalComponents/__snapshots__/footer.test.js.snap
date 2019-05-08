@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer  test suite renders correctly 1`] = `
+<footer>
+  <p>
+    © Andela 2018 All Rights Reserved.
+  </p>
+  <p>
+    Designed By Alexandra Collins
+  </p>
+</footer>
+`;

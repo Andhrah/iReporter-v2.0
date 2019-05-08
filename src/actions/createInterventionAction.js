@@ -1,15 +1,15 @@
-import actionTypeGenerator from './typesGenerator';
 import request from '../utils/http';
+import actionTypeGenerator from './typesGenerator';
 
-export const getInterventionType = actionTypeGenerator('INTERVENTIONS');
+const createInterventionType = actionTypeGenerator('CREATE_INTERVENTION');
 
 /**
  * Action creator that is dispatched when user starts operation
  * @returns {object} The action to dispatch
  */
 
-export const getAllInterventionsLoading = () => ({
-  type: getInterventionType.LOADING,
+export const createInterventionLoading = () => ({
+  type: createInterventionType.LOADING,
 });
 
 /**
@@ -17,8 +17,8 @@ export const getAllInterventionsLoading = () => ({
  * @returns {object} The action to dispatch
  */
 
-export const getAllInterventionsSucess = data => ({
-  type: getInterventionType.SUCCESS,
+export const createInterventionSuccess = data => ({
+  type: createInterventionType.SUCCESS,
   payload: data,
 });
 
@@ -27,8 +27,8 @@ export const getAllInterventionsSucess = data => ({
  * @returns {object} The action to dispatch
  */
 
-export const getAllInterventionsFailure = error => ({
-  type: getInterventionType.FAILURE,
+export const createInterventionFailure = error => ({
+  type: createInterventionType.FAILURE,
   error
 });
 
@@ -37,16 +37,17 @@ export const getAllInterventionsFailure = error => ({
  * @returns {object} dispatch object
  */
 
-export const getAllInterventions = () => async (dispatch) => {
-  dispatch(getAllInterventionsLoading());
+export const createIntervention = userData => async (dispatch) => {
+  dispatch(createInterventionLoading());
   try {
     const response = await request({
       route: 'interventions',
-      method: 'get',
+      method: 'post',
+      payload: userData,
     });
     const { data: { data } } = response;
-    dispatch(getAllInterventionsSucess(data));
+    dispatch(createInterventionSuccess(data));
   } catch (err) {
-    dispatch(getAllInterventionsFailure(err));
+    dispatch(createInterventionFailure(err));
   }
 };

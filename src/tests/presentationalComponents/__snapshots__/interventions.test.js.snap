@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interventions test suite renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "br321e",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "br321e",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Interventions
+      interventions={
+        Array [
+          Object {
+            "comment": "We need government intervention",
+            "created_by": 2,
+            "created_on": "2018-12-29T00:00:00.000Z",
+            "id": 9,
+            "images": Array [
+              "image",
+            ],
+            "intervention_reasons": Array [
+              "Bribery",
+              "emblezzlement",
+            ],
+            "location": "6.605874, 8.34917",
+            "status": "Under Investigation",
+            "videos": Array [
+              "video",
+            ],
+          },
+        ]
+      }
+    >
+      <section
+        className="section-flex"
+      >
+        <div
+          className="jumbotron"
+        >
+          <div
+            className="title-container"
+          >
+            <h2>
+              Interventions Reports
+            </h2>
+            <Link
+              to="/redflags"
+            >
+              <a
+                href="/redflags"
+                onClick={[Function]}
+              >
+                <em>
+                  See Red-Flag reports
+                </em>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div
+          className="grid-container"
+          id="red-flag-grid-container"
+        >
+          <div
+            className="incident-container-all list incidents"
+            key="9"
+          >
+            <Image
+              alt="red-flag incident"
+              src="http://lorempixel.com/400/400"
+            >
+              <img
+                alt="red-flag incident"
+                className="red-flag-image"
+                src="http://lorempixel.com/400/400"
+              />
+            </Image>
+            <div
+              className="author"
+              id="created-by"
+            >
+              <em
+                id="created-on"
+              >
+                created on Sat Dec 29 2018 by
+              </em>
+               
+              2
+            </div>
+            <div
+              className="location"
+            >
+              <p>
+                Location:
+                 
+                <span>
+                  <em>
+                    6.605874, 8.34917
+                  </em>
+                </span>
+                 
+              </p>
+            </div>
+            <div
+              className="status"
+            >
+              <p
+                className="none"
+              >
+                Status:
+                 
+                <span>
+                  <em>
+                    Under Investigation
+                  </em>
+                </span>
+              </p>
+            </div>
+            <div
+              className="comment"
+            >
+              <h4>
+                Dispalay me
+              </h4>
+              <p>
+                We need government intervention
+              </p>
+            </div>
+            <div>
+              <Link
+                className="read-more"
+                to="redflag/9"
+              >
+                <a
+                  className="read-more"
+                  href="/redflag/9"
+                  onClick={[Function]}
+                >
+                  Read more
+                   
+                  <i
+                    className="fas fa-angle-right"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Interventions>
+  </Router>
+</MemoryRouter>
+`;

@@ -17,7 +17,7 @@ module.exports = {
   entry: './src/index.jsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     // publicPath: '/',
   },
   resolve: {
@@ -50,7 +50,7 @@ module.exports = {
   },
   plugins: [htmlPlugin, dotenvPlugin, envLoaderPlugin],
   devServer: {
-    contentBase: path.resolve(__dirname, './dist'),
+    contentBase: path.resolve(__dirname, './build'),
     historyApiFallback: true,
     port: 8080
   }

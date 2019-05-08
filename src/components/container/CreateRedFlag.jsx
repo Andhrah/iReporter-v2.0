@@ -4,16 +4,16 @@ import { connect } from 'react-redux';
 import { ToastsContainer, ToastsStore } from 'react-toasts';
 import RedFlagForm from '../presentational/RedFlagForm';
 import { createRedFlag } from '../../actions';
-import { mediaUpload } from '../../actions/mediaUpload';
 import Navbar from '../presentational/Navbar';
 
 let splittedNames;
 let usersComment;
 // eslint-disable-next-line react/prefer-stateless-function
-class CreateRedFlag extends Component {
+export class CreateRedFlag extends Component {
   refFlagImage = React.createRef();
 
   state = {
+    redFlagCreated: false,
     selectedDay: new Date(),
     // eslint-disable-next-line react/no-unused-state
     values: {
@@ -93,9 +93,11 @@ class CreateRedFlag extends Component {
     } else {
       if (name === 'namesInvolved') {
         splittedNames = value.split(',');
+        return splittedNames;
       }
       if (name === 'comment') {
         usersComment = value.split(',');
+        return usersComment;
       }
     }
   }
@@ -113,30 +115,7 @@ class CreateRedFlag extends Component {
     event.preventDefault();
 
     const { createRedFlag: createUserRedFlag } = this.props;
-    //     var formData = new FormData();
-    // formData.append.upload_preset = 'thrikypy';
-    //     formData.append('file', this.refFlagImage.current.files[0]);
-
-    // isplay the values
-    // for (var value of formData.values()) {
-    //    console.log(value);
-    // }
-    // const formData = new FormData();
-    // console.log(this.refFlagImage.current.files[0]);
-    // if (this.refFlagImage.current.files[0].name.length > 0) {
-    //   formData.append('userpic', this.refFlagImage.current.files[0], 'chris.jpg');
-    //   console.log(formData);
-    // }
-    // formData.append.upload_preset = 'thrikypy';
-    // formData.append('file', this.refFlagImage.current.files[0]);
-
-    // await uploadImage(formData);
-    // const { newValues } = this.state;
-    // secureUrl && this.setState({
-    //   newValues: Object.assign(newValues, {
-    //     redFlagImages: secureUrl,
-    //   }),
-    // });
+    
     const {
       newValues: {
         homeCorruption,
@@ -204,8 +183,14 @@ class CreateRedFlag extends Component {
     createUserRedFlag(groupedUserData);
     ToastsStore.success('Thank you for sending this red flag, we will follow it up');
 
-    const { history } = this.props;
-    history.push('/redflags');
+    await this.setState({
+      redFlagCreated: true,
+    });
+    const { redFlagCreated } = this.state;
+    if (redFlagCreated) {
+      const { history } = this.props;
+      history.push('/redflags');
+    }
   }
 
 
@@ -233,20 +218,14 @@ class CreateRedFlag extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  secureUrl: state.mediaUpload
-});
-
 CreateRedFlag.propTypes = {
   createRedFlag: PropTypes.func,
-  mediaUpload: PropTypes.func,
-  secureUrl: PropTypes.string,
+  history: PropTypes.array,
 };
 
 CreateRedFlag.defaultProps = {
   createRedFlag: () => {},
-  mediaUpload: () => {},
-  secureUrl: '',
+  history: [],
 };
 
-export default connect(mapStateToProps, { createRedFlag, mediaUpload })(CreateRedFlag);
+export default connect(null, { createRedFlag })(CreateRedFlag);

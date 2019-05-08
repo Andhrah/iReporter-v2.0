@@ -5,4 +5,3 @@ export * from './loginActions';
 export * from './singleRedFlagAction';
 export * from './createRedFlagAction';
 export * from './createInterventionAction';
-export * from './mediaUpload';
