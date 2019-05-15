@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import HomepageView from '../presentational/Homepage';
 import { getAllRedflags, getAllInterventions } from '../../actions';
 
+
 class Homepage extends Component {
   componentDidMount() {
     const {

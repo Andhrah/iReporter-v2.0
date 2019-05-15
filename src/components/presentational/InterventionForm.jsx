@@ -71,7 +71,7 @@ const InterventionForm = ({
         {/* --------------------------------------------------------------------- */}
         <p>Where did it happen?</p>
         <label htmlFor="namesInvolved">Location</label>
-        <input style={{ height: 40, paddingLeft: 15, paddingRight: 15, fontSize: 17 }} name="namesInvolved" onChange={handleChange} id="names-involved" required />
+        <input style={{ height: 40, paddingLeft: 15, paddingRight: 15, fontSize: 17 }} name="displayLocation" onChange={handleChange} id="displayLocation" required />
 
         {/* <div className="map">Google Map</div> */}
         {/* ----------------------------------------------------- */}

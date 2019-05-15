@@ -5,6 +5,7 @@ import RedFlagsView from '../presentational/RedFlags';
 import { getAllRedflags } from '../../actions';
 import Navbar from '../presentational/Navbar';
 
+
 export class RedFlags extends Component {
   componentDidMount() {
     const {
@@ -15,7 +16,6 @@ export class RedFlags extends Component {
 
   render() {
     const { redFlags } = this.props;
-
     return (
       <>
         <Navbar

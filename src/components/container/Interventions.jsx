@@ -5,6 +5,7 @@ import InterventionsView from '../presentational/Interventions';
 import { getAllInterventions } from '../../actions';
 import Navbar from '../presentational/Navbar';
 
+
 export class Interventions extends Component {
   componentDidMount() {
     const {
@@ -15,7 +16,6 @@ export class Interventions extends Component {
 
   render() {
     const { interventions } = this.props;
-
     return (
       <>
         <Navbar

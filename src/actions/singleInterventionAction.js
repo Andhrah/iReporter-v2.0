@@ -1,15 +1,15 @@
 import request from '../utils/http';
 import actionTypeGenerator from './typesGenerator';
 
-const createInterventionType = actionTypeGenerator('CREATE_INTERVENTION');
+export const getSingleInterventionType = actionTypeGenerator('INTERVENTION');
 
 /**
  * Action creator that is dispatched when user starts operation
  * @returns {object} The action to dispatch
  */
 
-export const createInterventionLoading = () => ({
-  type: createInterventionType.LOADING,
+export const getSingleInterventionLoading = () => ({
+  type: getSingleInterventionType.LOADING,
 });
 
 /**
@@ -17,8 +17,8 @@ export const createInterventionLoading = () => ({
  * @returns {object} The action to dispatch
  */
 
-export const createInterventionSuccess = data => ({
-  type: createInterventionType.SUCCESS,
+export const getSingleInterventionSuccess = data => ({
+  type: getSingleInterventionType.SUCCESS,
   payload: data,
 });
 
@@ -27,8 +27,8 @@ export const createInterventionSuccess = data => ({
  * @returns {object} The action to dispatch
  */
 
-export const createInterventionFailure = error => ({
-  type: createInterventionType.FAILURE,
+export const getSingleInterventionFailure = error => ({
+  type: getSingleInterventionType.FAILURE,
   error
 });
 
@@ -37,18 +37,16 @@ export const createInterventionFailure = error => ({
  * @returns {object} dispatch object
  */
 
-export const createIntervention = userData => async (dispatch) => {
-  console.log(userData, 'heheheheh')
-  dispatch(createInterventionLoading());
+export const getSingleIntervention = id => async (dispatch) => {
+  dispatch(getSingleInterventionLoading());
   try {
     const response = await request({
-      route: 'interventions',
-      method: 'post',
-      payload: userData,
+      route: `interventions/${id}`,
+      method: 'get',
     });
     const { data: { data } } = response;
-    dispatch(createInterventionSuccess(data));
+    dispatch(getSingleInterventionSuccess(data));
   } catch (err) {
-    dispatch(createInterventionFailure(err));
+    dispatch(getSingleInterventionFailure(err));
   }
 };

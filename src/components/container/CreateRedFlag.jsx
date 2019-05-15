@@ -5,6 +5,7 @@ import { ToastsContainer, ToastsStore } from 'react-toasts';
 import RedFlagForm from '../presentational/RedFlagForm';
 import { createRedFlag } from '../../actions';
 import Navbar from '../presentational/Navbar';
+import checkAuthentication from '../../utils/authentication';
 
 let splittedNames;
 let usersComment;
@@ -115,7 +116,7 @@ export class CreateRedFlag extends Component {
     event.preventDefault();
 
     const { createRedFlag: createUserRedFlag } = this.props;
-    
+
     const {
       newValues: {
         homeCorruption,
@@ -196,6 +197,7 @@ export class CreateRedFlag extends Component {
 
   render() {
     const { values, selectedDay } = this.state;
+    checkAuthentication();
     return (
       <Fragment>
         <Navbar

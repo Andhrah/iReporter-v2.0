@@ -5,7 +5,7 @@ import { ToastsContainer, ToastsStore } from 'react-toasts';
 import InterventionForm from '../presentational/InterventionForm';
 import { createIntervention } from '../../actions';
 import Navbar from '../presentational/Navbar';
-
+import checkAuthentication from '../../utils/authentication';
 
 let describe;
 
@@ -23,7 +23,7 @@ export class CreateIntervention extends Component {
       collapsedBridge: 'Collapse',
       otherReasons: false,
       otherReasonsSpecify: false,
-
+      displayLocation: 'Lagos ,Nigeria',
       interventionDate: new Date().toDateString,
       interventionImages: false,
       interventionVideos: false,
@@ -39,6 +39,7 @@ export class CreateIntervention extends Component {
       collapsedBridge: '',
       otherReasons: false,
       otherReasonsSpecify: false,
+      displayLocation: '',
       interventionDate: new Date().toDateString,
       interventionImages: false,
       interventionVideos: false,
@@ -54,7 +55,7 @@ export class CreateIntervention extends Component {
 
   handleChange = async (event) => {
     const { name, value, checked } = event.target;
-    if (checked && name !== 'describe') {
+    if ((checked || name === 'displayLocation') && name !== 'describe') {
       const { newValues } = this.state;
       await this.setState({
         newValues: Object.assign(newValues, {
@@ -86,6 +87,7 @@ export class CreateIntervention extends Component {
         collapsedBridge,
         otherReasons,
         otherReasonsSpecify,
+        displayLocation,
         interventionImages,
         interventionVideos,
       }
@@ -103,6 +105,7 @@ export class CreateIntervention extends Component {
         otherReasons,
         otherReasonsSpecify].filter(Boolean),
       location: '5.605874, 8.349147',
+      displayLocation,
       images: interventionImages,
       videos: interventionVideos,
       comment: describe,
@@ -123,6 +126,7 @@ export class CreateIntervention extends Component {
 
   render() {
     const { values } = this.state;
+    checkAuthentication();
     return (
       <>
         <Navbar

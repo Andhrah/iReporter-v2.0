@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import RedFlagView from '../presentational/RedFlag';
 import { getSingleRedflag } from '../../actions/singleRedFlagAction';
 import Navbar from '../presentational/Navbar';
+import checkAuthentication from '../../utils/authentication';
 
 export class RedFlag extends Component {
   state = {
@@ -21,6 +22,7 @@ export class RedFlag extends Component {
 
   render() {
     const { singleRedFlag: { data, loading } } = this.props;
+    checkAuthentication();
     return (
       !loading
       && (

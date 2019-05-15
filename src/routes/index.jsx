@@ -9,7 +9,6 @@ import Interventions from '../components/container/Interventions';
 import RedFlag from '../components/container/RedFlag';
 import CreateRedFlag from '../components/container/CreateRedFlag';
 import CreateIntervention from '../components/container/CreateIntervention';
-
 /**
  * @function Routes - A JSX wrapper for all the app's routes
  * @returns {BrowserRouter} - The combination of all the routes in the app

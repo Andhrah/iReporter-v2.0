@@ -7,6 +7,7 @@ import SignupView from '../presentational/Signup';
 import { signup } from '../../actions';
 import Navbar from '../presentational/Navbar';
 
+
 /**
  * @class Signup
  * @extends { React }
