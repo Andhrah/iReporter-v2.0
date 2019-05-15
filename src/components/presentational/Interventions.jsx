@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -29,7 +30,7 @@ const Interventions = ({ interventions }) => (
               <p>
                 Location:
                 {' '}
-                <span><em>{intervention.location}</em></span>
+                <span><em>{intervention.display_location}</em></span>
                 {' '}
               </p>
             </div>
@@ -42,8 +43,12 @@ const Interventions = ({ interventions }) => (
             </div>
             <div className="comment">
               <h4>
-                Dispalay me
-                {/* {intervention.intervention_reasons} */}
+                {intervention.intervention_reasons.map((eachIntervention, index) => (
+                  <>
+                    <span key={index}>{eachIntervention}</span>
+                    <br />
+                  </>
+                ))}
               </h4>
               <p>
                 {intervention.comment.length <= 100 ? intervention.comment : `${intervention.comment.substring(0, 100)} ...`}
