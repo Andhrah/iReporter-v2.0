@@ -1,8 +1,9 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from './Image';
 
-const Intervention = ({ intervention }) => (
+const InterventionView = ({ intervention }) => (
   <div className="first-incident-container">
     <div className="jumbotron">
       <div className="title-container">
@@ -16,7 +17,7 @@ const Intervention = ({ intervention }) => (
         <Image src="http://lorempixel.com/400/400" alt="red-flag incident" />
       </div>
       <div className="author">
-        <em>created on nov 22 2018 by</em>
+        <em>{new Date(intervention && intervention.created_on).toDateString()}</em>
         {' '}
         Andra
       </div>
@@ -24,11 +25,11 @@ const Intervention = ({ intervention }) => (
         <p>
           Location:
           {' '}
-          <span><em>Kano, Nigeria</em></span>
+          <span><em>{intervention && intervention.display_location}</em></span>
           {' '}
         </p>
       </div>
-      <iframe allowFullScreen src={`https://maps.google.com/maps?q=${redFlag.names_involved[0]}&output=embed&hl=en;z=20`} frameBorder="0" title={redFlag.names_involved[0]} className="map" />
+      <iframe allowFullScreen src={`https://maps.google.com/maps?q=${intervention.display_location}&output=embed&hl=en;z=20`} frameBorder="0" title={intervention.display_location} className="map" />
       <div className="status">
         <p>
           Status:
@@ -37,25 +38,21 @@ const Intervention = ({ intervention }) => (
         </p>
       </div>
       <div className="comment">
-        <h4>Bad Road</h4>
+        <h4>
+          {intervention.intervention_reasons.length > 0 && intervention.intervention_reasons.map((eachIntervention, index) => {
+            if (index < 2) {
+              return (
+                <span key={index}>
+                  <span key={index}>{eachIntervention}</span>
+                  <br />
+                </span>
+              );
+            }
+            return false;
+          })}
+        </h4>
         <p>
-          Residents of five communities in Kumbotso local
-          government area of Kano state have threatened to
-          boycott the routine polio immunization and 2019
-          eneral elections if the authorities concerned
-          fail to rehabilitate their damaged road that makes
-          the areas inaccessible especially during rainy season.
-          The affected communities are Yanlemo ‘Yan-Tasi,
-          Mai Kalwa, Wailari, Kwarin Goje and Umarawa.
-          Kano Chronicle observed that the residents have
-          been battling with flooding, erosion and other
-          related challenges courtesy of lack of good drainages.
-          The Chairman, Amalgamation of Wailari and Mai Kalwa
-          Communities’ Associations, Alhaji Nura Danjuma,
-          said the affected communities had channeled their
-          complaints to relevant authorities with a view to
-          addressing the problem but their appeals were
-          unsuccessful.
+          {intervention.comment}
         </p>
       </div>
       <div className="btn-container">
@@ -66,8 +63,8 @@ const Intervention = ({ intervention }) => (
   </div>
 );
 
-Intervention.propTypes = {
+InterventionView.propTypes = {
   intervention: PropTypes.object.isRequired
 };
 
-export default Intervention;
+export default InterventionView;

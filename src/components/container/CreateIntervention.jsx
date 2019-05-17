@@ -63,7 +63,7 @@ export class CreateIntervention extends Component {
         }),
       });
     } else if (name === 'describe') {
-      describe = value.split(',');
+      describe = value;
       return describe;
     }
   }

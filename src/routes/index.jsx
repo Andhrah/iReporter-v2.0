@@ -7,6 +7,7 @@ import Footer from '../components/presentational/Footer';
 import RedFlags from '../components/container/RedFlags';
 import Interventions from '../components/container/Interventions';
 import RedFlag from '../components/container/RedFlag';
+import Intervention from '../components/container/Intervention';
 import CreateRedFlag from '../components/container/CreateRedFlag';
 import CreateIntervention from '../components/container/CreateIntervention';
 /**
@@ -26,6 +27,7 @@ function Routes() {
           <Route path="/redflag/:id" component={RedFlag} exact />
           <Route path="/redflags" component={RedFlags} exact />
           <Route path="/interventions" component={Interventions} exact />
+          <Route path="/intervention/:id" component={Intervention} exact />
           <Route path="/create-redflag" component={CreateRedFlag} exact />
           <Route path="/create-intervention" component={CreateIntervention} exact />
         </Switch>
